@@ -1,16 +1,19 @@
 variable "location" {
     type = string
     default = "AustraliaEast"
+    description = "The Azure region the configuration set will be deployed to."
 }
 
 variable "environment" {
     type = string
     default = "TerraformTest"
+    description = "A descriptive name for this configuration set (no spaces)."
 }
 
 variable "address_space" {
     type = string
     default = "10.100.0.0/16"
+    description = "The address space for a virtual network is composed of one or more non-overlapping address ranges that are specified in CIDR notation."
 }
 
 variable "subnet1" {
